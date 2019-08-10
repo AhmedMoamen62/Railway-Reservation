@@ -1,7 +1,7 @@
 #include "AdminMode.h"
 AdminMode::AdminMode()
 {
-	password = "ainshams";
+	password = "1234567";
 }
 void AdminMode::adminmenu()
 {
@@ -222,7 +222,7 @@ void AdminMode::displaydetail()
 	{
 		cout << "Train number " << i + 1 << endl;
 		T.getel(i + 1)->printtrain();
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ"<<endl;
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€"<<endl;
 	}
 }
 void AdminMode::displaypassdet()
@@ -234,8 +234,8 @@ void AdminMode::displaypassdet()
 	}
 	for (int i = 0; i < k; i++)
 	{
-		int j = P.getel(i + 1)->gettrainnum();
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+		int j = findtrain(P.getel(i + 1)->gettrainnum());
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 		cout << "Passenger number : " << i + 1 << endl;
 		cout << "Train number : " << T.getel(j)->getnum() << endl;
 		cout << "Train name : " << T.getel(j)->getname() << endl;
@@ -248,6 +248,6 @@ void AdminMode::displaypassdet()
 		P.getel(i + 1)->displaydatares();
 		cout << "Your concession category : " << P.getel(i + 1)->getcon() << endl;
 		cout << "You must pay : " << (P.getel(i + 1)->getpasnum())*(T.getel(j)->getfare(P.getel(i + 1)->getclass())) << endl;
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	}
 }
