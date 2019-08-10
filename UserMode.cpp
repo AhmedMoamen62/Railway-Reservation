@@ -1,7 +1,6 @@
 #include "UserMode.h"
 #include"User.h"
-#include<iostream>
-#include <windows.h>
+#include<windows.h>
 using namespace std;
 UserMode::UserMode()
 {
@@ -181,7 +180,7 @@ int UserMode::findtrain(int a)
 }
 void UserMode::display(int a,int b,bool c)
 {
-	cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+	cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	if (c == 1)
 	{
 		cout << "Passenger number (Please record this number with you) : " << a << endl;
@@ -222,18 +221,18 @@ void UserMode::display(int a,int b,bool c)
 	{
 		cout << "You can collect : " << (P.getel(a)->getpasnum())*(T.getel(b)->getfare(P.getel(a)->getclass())) << endl;
 	}
-	cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+	cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	if (c == 1)
 	{
 		cout << "..............Your ticket is reserved..............\n";
 		cout << "..............END OF RESERVATION..............\n";
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	}
 	else
 	{
 		cout << "..............Your ticket is cancelled..............\n";
 		cout << "..............END OF CANCELLATION..............\n";
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ\n";
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	}
 }
 void UserMode::Enquiry()
@@ -253,7 +252,7 @@ void UserMode::Enquiry()
 		cout << "Number of seats available in second class & fare per ticket (number fare) : " << T.getel(i + 1)->getseat('s') - T.getel(i + 1)->getres('s') << " " << T.getel(i + 1)->getfare('s') << endl;
 		cout << "Date of travelling (day month year) : ";
 		T.getel(i + 1)->printdata();
-		cout << "ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ" << endl;
+		cout << "Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€Ù€\n";
 	}
 }
 void UserMode::cancel()
@@ -311,7 +310,7 @@ e:	if (flag == 2)
 	cout << "Theres's no passenger has reserved before\n";
     }
 }
-void UserMode::getword(string& a)
+ void UserMode::getword(string& a)
 {
 	HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE);
 	DWORD mod = 0;
